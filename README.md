@@ -10,7 +10,7 @@ Optimal entry and exit points for a pair one pair are found via grid search and 
 I use hourly price close prices pulled from Binance using their public API. 
 
 ## Results and considerations
-After optimizating, I find average monthly returns of around 8% in the training set, and 5% in the test set.
+After optimizating, I find average monthly returns of around 8% in the training set, and 5% in the test set in this notebook which is for demonstration purposes.
 This is without taking trading costs into consideration and potential margin calls from short positions moving against you. 
 
 However, overfit is largely avoided as well as look ahead bias. Pairs are constructed only from the train set as well as the optimal entry and exit points. The test set contains new data that had not been seen before for any calculations and calibrations.
